@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a i {
+    margin-right: 8px;
+}
+
+.signup-button button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signup-button button:hover {
+    background-color: #ff4081;
+    color: #fff;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+}
+.about-us {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.aboutus-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.aboutus-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.aboutus-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.aboutus-text p {
+    font-size: 1.25rem;
+}
+.our-services {
+    color: #0084ff;
+    box-shadow: 2px 2px 4px #ccc;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.our-services h1 i {
+    color: #001aff;
+}
+
+.ourservices-text ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.ourservices-text ul li {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    align-items: center;
+    transition: color 0.3s, transform 0.3s;
+    box-shadow: 0 2px #afafaf8c;
+}
+
+.ourservices-text ul li:hover {
+    color: #0084ff;
+    transform: translatey(-10px); 
+}
+
+.ourservices-text ul li i {
+    margin-right: 10px; 
+    transition: color 0.3s;
+}
+
+.ourservices-text ul li a {
+    text-decoration: none;
+    color: inherit; 
+    transition: color 0.3s;
+}
+
+.ourservices-text ul li:hover i,
+.ourservices-text ul li:hover a {
+    color: #0084ff; 
+}
+
+
+.ourportfolio {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.ourportfolio h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0084ff;
+}
+
+.ourportfolio i{
+    color: #001aff;
+}
+
+.ourportfolio table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.ourportfolio table, .ourportfolio th, .ourportfolio td  {
+    border: 1px solid #a8a5a5;
+}
+
+.ourportfolio th, .ourportfolio td {
+    padding: 10px;
+    text-align: left;
+}
+
+.ourportfolio .head-table {
+    background-color: #e7e6e6;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.product-card {
+    width: calc(25%); 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.product-card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+}
+
+
+.customer {
+    padding: 10px 20px;
+    color: #007bff;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.customer i {
+    color: #001aff;
+}
+
+.customer1 {
+    border-left: 5px solid #007bff;
+    background-color: #d4d4d4;
+    border-radius: 7px;
+    box-shadow: 5px 5px #a8a5a5;
+    padding: 20px;
+    margin-top: 20px;
+    transition: transform 0.3s ease; 
+}
+
+.customer1:hover {
+    transform: translateY(-5px); 
+}
+
+.customer1 p {
+    color: #333;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.customer2 {
+    border-left: 5px solid #007bff;
+    background-color: #d4d4d4;
+    border-radius: 7px;
+    box-shadow: 5px 5px #a8a5a5;
+    padding: 20px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.customer2:hover {
+    transform: translateY(-5px); 
+}
+
+.customer2 p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.customer2 p strong {
+    font-weight: bold;
+}
+
+.ourteam {
+    margin-top: 20px;
+    color: #007bff;
+    font-size: 1.5rem;
+}
+.ourteam h1 i {
+    color: #001aff;
+}
+.team-cards{
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+ .team-card {
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(0, 102, 255, 0.288);
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    transition: transform 0.3s ease; 
+    
+ }
+ .team-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 60% 0;
+ }
+
+.team-card:hover{
+    transform: translateY(-10px);
+}
+
+.team-card h2{
+    font-size: 1.5rem;
+}
+.team-card p {
+    font-size: 1rem;
+    color: #777474;
+}
+
+.contactus {
+    margin-top: 20px;
+    padding: 20px; 
+    color: #007bff;
+    font-size: 1.5rem;
+    border: 5px solid #007bff;
+    border-radius: 10px;
+    background-color: #f9f9f9; 
+}
+
+.contactus i {
+    color: #001aff;
+    margin-left: 10px; 
+}
+
+.contactus-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    max-width: 90%; 
+    margin: 20px auto; 
+}
+
+.contactus-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: start;
+}
+
+.contactus-form input[type="text"],
+.contactus-form input[type="email"],
+.contactus-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contactus-form textarea {
+    height: 100px; 
+    resize: vertical; 
+}
+
+.contactus-form button {
+    padding: 30px 60px ;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self:center; 
+}
+
+.contactus-form button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 10px 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
